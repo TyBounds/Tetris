@@ -11,7 +11,6 @@ shape2Rectangle = drawpad.create_rectangle(475,500,500,400, outline = 'black', f
 
 tpoints = [140, 350, 140, 375, 165, 375, 165,400, 190, 
     400, 190, 375, 215, 375, 215, 350]
-<<<<<<< HEAD
 drawpad.create_polygon(tpoints, outline='black', 
     fill='purple', width=2)
 rlpoints = [355, 70, 355,170, 400, 170, 400, 
@@ -30,39 +29,6 @@ rzpoints = [15, 45, 15, 70, 65, 70, 65, 45, 90, 45,
 90, 20, 40, 20, 40, 45]
 drawpad.create_polygon(rzpoints, outline='black', 
     fill='green', width=2)
-    
-shapelist = [Shape1square, Shape2Rectangle, tpoints, rlpoints,
-llpoints, lzpoints, rzpoints]
-#make the start page
-
-
-#start up the game 
-def animate(self):
-    global shapelist
-    global direction
-    x1,y1,x2,y2 = drawpad.coords(shapelist)
-    if x2 > 800:
-        direction = - 5
-    elif x1 < 0:
-        direction = 5
-    drawpad.move(shapelist, direction, 0)
-    drawpad.after(5,self.animate)
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-root.mainloop()
-=======
 #drawpad.create_polygon(tpoints, outline='black', 
  #   fill='purple', width=2)
 #rlpoints = [355, 70, 355,170, 400, 170, 400, 
@@ -81,6 +47,20 @@ root.mainloop()
 #90, 20, 40, 20, 40, 45]
 #drawpad.create_polygon(rzpoints, outline='black', 
  #   fill='green', width=2)
+    
+#shapelist = [Shape1square, Shape2Rectangle, tpoints, rlpoints,
+#llpoints, lzpoints, rzpoints]
+#make the start page    
+    
+    
+    
+    
+    
+    
+    
+    
+root.mainloop()
+
 
 #shapes = [tpoints, rlpoints, llpoints, lzpoints, rzpoints, shape1Square, Shape2Rectangle]
 
@@ -171,4 +151,4 @@ root.mainloop()
 
 
 
->>>>>>> origin/master
+
