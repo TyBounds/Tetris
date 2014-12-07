@@ -29,4 +29,35 @@ rzpoints = [15, 45, 15, 70, 65, 70, 65, 45, 90, 45,
 90, 20, 40, 20, 40, 45]
 drawpad.create_polygon(rzpoints, outline='black', 
     fill='green', width=2)
+    
+shapelist = [Shape1square, Shape2Rectangle, tpoints, rlpoints,
+llpoints, lzpoints, rzpoints]
+#make the start page
+
+
+#start up the game 
+def animate(self):
+    global shapelist
+    global direction
+    x1,y1,x2,y2 = drawpad.coords(shapelist)
+    if x2 > 800:
+        direction = - 5
+    elif x1 < 0:
+        direction = 5
+    drawpad.move(shapelist, direction, 0)
+    drawpad.after(5,self.animate)
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 root.mainloop()
