@@ -13,8 +13,8 @@ shape2Rectangle = drawpad.create_rectangle(475,500,500,400, outline = 'black', f
 tpoints = [140, 350, 140, 375, 165, 375, 165,400, 190, 
      400, 190, 375, 215, 375, 215, 350]
 
-#drawpad.create_polygon(tpoints, outline='black', 
- #   fill='purple', width=2)
+t = drawpad.create_polygon(tpoints, outline='black', 
+    fill='purple', width=2)
 #rlpoints = [355, 70, 355,170, 400, 170, 400, 
  #   145, 380,145, 380,70]
 #drawpad.create_polygon(rlpoints, outline='black', 
@@ -63,15 +63,15 @@ def animate():
     drawpad.move(shape2Rectangle,0,direction)
    
     #The T
-    x1, y1, x2, y2 = drawpad.coords(tpoints)
+    x1, y1, x2, y2 = drawpad.coords(t)
     if y1 <1:
-        drawpad.move(tpoints,0,direction)
+        drawpad.move(t,0,direction)
     if y2 < drawpad.winfo_height(): 
         direction = 2
     else:
         direction = 0
     #Move our oval object by the value of direction
-    drawpad.move(tpoints,0,direction)
+    drawpad.move(t,0,direction)
     # Wait for 1 millisecond, then recursively call our animate function
     drawpad.after(1, animate)
 
