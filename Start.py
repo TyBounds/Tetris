@@ -13,8 +13,8 @@ shape2Rectangle = drawpad.create_rectangle(475,500,500,400, outline = 'black', f
 tpoints = [140, 350, 140, 375, 165, 375, 165,400, 190, 
      400, 190, 375, 215, 375, 215, 350]
 
-#drawpad.create_polygon(tpoints, outline='black', 
- #   fill='purple', width=2)
+drawpad.create_polygon(tpoints, outline='black', 
+    fill='purple', width=2)
 #rlpoints = [355, 70, 355,170, 400, 170, 400, 
  #   145, 380,145, 380,70]
 #drawpad.create_polygon(rlpoints, outline='black', 
@@ -33,8 +33,6 @@ tpoints = [140, 350, 140, 375, 165, 375, 165,400, 190,
  #   fill='green', width=2)
 
 #shapes = [tpoints, rlpoints, llpoints, lzpoints, rzpoints, shape1Square, Shape2Rectangle]
-
-
 drawpad.move(shape1Square,225,-400)
 drawpad.move(shape2Rectangle,-300, -400)
 drawpad.move(tpoints,225,-400)
